@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333333;
+    margin: 40px;
+}
+
+h1 {
+    color: #2a8d37;
+}
+
+h2 {
+    color: #c71818;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Link */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cc3300;
+    text-decoration: underline;
+}
+
+/* Image */
+img {
+    width: 400px;
+    max-width: 100%;
+    border: 3px solid #333333;
+    border-radius: 12px;
+}
+
+/* Table */
+table {
+    width: 500px;
+    max-width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #888888;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #dddddd;
+}
+
+/* Every second row has a different background */
+tr:nth-child(even) {
+    background-color: #e8f1f8;
+}
+
+/* Remove default bullet points */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 6px 0;
+}
