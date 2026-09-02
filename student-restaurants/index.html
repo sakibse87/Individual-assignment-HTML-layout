@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Restaurants Finland</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Student Restaurants Finland</h1>
+            <p>Find student restaurants and their daily & weekly menus</p>
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <!-- Search and filters -->
+        <section class="filters">
+
+            <div class="filter-group">
+                <label for="searchInput">Search restaurant</label>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search by restaurant name..."
+                >
+            </div>
+
+
+            <div class="filter-group">
+                <label for="cityFilter">Filter by city</label>
+
+                <select id="cityFilter">
+                    <option value="all">All cities</option>
+                </select>
+            </div>
+
+        </section>
+
+
+        <!-- Restaurant section -->
+        <section class="restaurant-section">
+
+            <div class="section-title">
+                <h2>Restaurants</h2>
+
+                <span id="restaurantCount">
+                    0 restaurants
+                </span>
+            </div>
+
+
+            <div id="loading" class="message">
+                Loading restaurants...
+            </div>
+
+
+            <div id="errorMessage" class="message error hidden">
+                Unable to load restaurants. Please try again later.
+            </div>
+
+
+            <div id="restaurantList" class="restaurant-grid">
+                <!-- Restaurants will be added here using JavaScript -->
+            </div>
+
+        </section>
+
+
+        <!-- Menu section -->
+        <section id="menuSection" class="menu-section hidden">
+
+            <div class="menu-header">
+
+                <div>
+                    <h2 id="selectedRestaurantName">
+                        Restaurant Menu
+                    </h2>
+
+                    <p id="selectedRestaurantAddress"></p>
+                </div>
+
+                <button id="closeMenuButton" class="close-button">
+                    Close
+                </button>
+
+            </div>
+
+
+            <!-- Menu buttons -->
+            <div class="menu-buttons">
+
+                <button
+                    id="dailyButton"
+                    class="menu-button active"
+                >
+                    Daily Menu
+                </button>
+
+                <button
+                    id="weeklyButton"
+                    class="menu-button"
+                >
+                    Weekly Menu
+                </button>
+
+            </div>
+
+
+            <!-- Daily menu -->
+            <div id="dailyMenu" class="menu-content">
+                <h3>Today's Menu</h3>
+
+                <div id="dailyMenuContent">
+                    Loading menu...
+                </div>
+            </div>
+
+
+            <!-- Weekly menu -->
+            <div id="weeklyMenu" class="menu-content hidden">
+                <h3>Weekly Menu</h3>
+
+                <div id="weeklyMenuContent">
+                    Loading weekly menu...
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <p>
+            TX00EY23 Web Application Development
+        </p>
+
+        <p>
+            Student Restaurants Finland
+        </p>
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
